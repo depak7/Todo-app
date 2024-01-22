@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 
-mongoose.connect("mongodb+srv://deepak:123@cluster0.cxhznrt.mongodb.net/todos")
+mongoose.connect("your mango db url /todos")
 const todoSchema = mongoose.Schema({
     title: String,
     description: String,
