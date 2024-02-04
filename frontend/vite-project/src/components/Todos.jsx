@@ -8,8 +8,7 @@ export function Todos({todos}) {
             },
             body: JSON.stringify({
               _id: id,
-              // Include other properties you want to update
-              // ...
+              
             }),
           });
       
@@ -17,8 +16,7 @@ export function Todos({todos}) {
             throw new Error(`HTTP error! Status: ${response.status}`);
           }
       
-          // Assuming you want to update the state after a successful update
-          // Update the state or trigger a re-fetch here if needed
+          
         } catch (error) {
           console.error("Error updating todo:", error);
         }
